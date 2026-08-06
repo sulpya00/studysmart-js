@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String        @id @default(cuid())
+  email        String        @unique
+  name         String?
+  passwordHash String?
+  notes        Note[]
+  chatSessions ChatSession[]
+  aiRequests   AIRequest[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model Note {
+  id            String         @id @default(cuid())
+  title         String
+  subject       String?
+  content       String         @db.Text
+  userId        String
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  summaries     Summary[]
+  flashcardSets FlashcardSet[]
+  questionSets  QuestionSet[]
+  chatSessions  ChatSession[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+
+  @@index([userId, createdAt])
+}
+
+model Summary {
+  id        String   @id @default(cuid())
+  title     String?
+  content   String   @db.Text
+  keyPoints Json?
+  noteId    String
+  note      Note     @relation(fields: [noteId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model FlashcardSet {
+  id        String      @id @default(cuid())
+  title     String
+  noteId    String
+  note      Note        @relation(fields: [noteId], references: [id], onDelete: Cascade)
+  cards     Flashcard[]
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+}
+
+model Flashcard {
+  id             String       @id @default(cuid())
+  front          String       @db.Text
+  back           String       @db.Text
+  reviewStatus   String       @default("NEW")
+  timesReviewed  Int          @default(0)
+  lastReviewedAt DateTime?
+  setId          String
+  set            FlashcardSet @relation(fields: [setId], references: [id], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+}
+
+model QuestionSet {
+  id         String     @id @default(cuid())
+  title      String
+  difficulty String     @default("medium")
+  type       String     @default("multiple-choice")
+  noteId     String
+  note       Note       @relation(fields: [noteId], references: [id], onDelete: Cascade)
+  questions  Question[]
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+}
+
+model Question {
+  id            String      @id @default(cuid())
+  prompt        String      @db.Text
+  options       Json?
+  correctAnswer String      @db.Text
+  explanation   String?     @db.Text
+  setId         String
+  set           QuestionSet @relation(fields: [setId], references: [id], onDelete: Cascade)
+  createdAt     DateTime    @default(now())
+}
+
+model ChatSession {
+  id        String        @id @default(cuid())
+  title     String
+  userId    String
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  noteId    String?
+  note      Note?         @relation(fields: [noteId], references: [id], onDelete: SetNull)
+  messages  ChatMessage[]
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@index([userId, updatedAt])
+}
+
+model ChatMessage {
+  id        String      @id @default(cuid())
+  role      String
+  content   String      @db.Text
+  sessionId String
+  session   ChatSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  createdAt DateTime    @default(now())
+
+  @@index([sessionId, createdAt])
+}
+
+model AIRequest {
+  id              String   @id @default(cuid())
+  feature         String
+  provider        String
+  model           String?
+  status          String
+  approximateSize Int?
+  errorMessage    String?  @db.Text
+  userId          String?
+  user            User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt       DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
