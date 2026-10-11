@@ -38,4 +38,4 @@ The current core suite intentionally exits with code 1 because duplicate-card an
 ## Remaining evidence
 Capture the UI showing the fixed notes, summary, flashcards, questions and reopened topic. Use the test email in evidence/local-workflow/request.json to view its saved history. Capture one Gemini run separately if available and record its model, request, response and errors. Do not include API keys or database passwords. Run `npm.cmd audit --json > evidence/windows-audit.json` to capture the current dependency assessment. A failed audit is evidence, not a reason to force dependency upgrades before the baseline is recorded.
 
-Review the AI log and record your actual review. Meet the supervisor and append the date, decisions and action owners to docs/supervisor-briefing.md. Send the evidence/local-workflow folder and screenshots for incorporation into the memo.
+Review the AI log and record your actual review. Send the evidence/local-workflow folder and screenshots for incorporation into the memo.

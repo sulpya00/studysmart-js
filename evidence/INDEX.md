@@ -9,4 +9,10 @@
 - source-manifest.json: hashes of application/config files in the validation copy.
 - local-workflow: created only when the student executes the supplied local script.
 
-No screenshot, live provider result or database run is implied by these files. The ACID fixture was authored for testing on 11 October 2026. All four facts are provided explicitly; this does not test difficult academic content or long-note behavior.
+The initial automated evidence did not include a database run. The later uploaded local-workflow records now establish mock persistence after a user-confirmed application restart. Screenshots are included in screenshots/; no live provider result is included. The ACID fixture was authored for testing on 11 October 2026. All four facts are provided explicitly; this does not test difficult academic content or long-note behavior.
+
+Update: local-workflow contains the uploaded failed create attempt, successful create, saved response and successful verify. review.md records the content comparison and restart attestation. uploaded-windows/evidence preserves the full supplied evidence archive, including older environment/build/audit records; these are not all new runs.
+
+S01–S03: screenshots/saved-summary.png, screenshots/saved-flashcards.png and screenshots/practice-question.png. Supplied by Aveek on 11 October. The first question only is shown.
+
+Git baseline: git-baseline.md records the supplied commit and successful push output.

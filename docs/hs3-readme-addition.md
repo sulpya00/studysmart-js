@@ -1,0 +1,4 @@
+## Hard Stop 3 validation status
+On 11 October, two direct-function runs each passed 10 checks and failed 2 uniqueness checks. Five isolated HTTP checks passed; frontend build and Prisma generation passed. A local mock study pack was saved and retrieved unchanged after a user-confirmed application restart. Screenshots show the saved summary, six flashcards and first question. Duplicate mock output and awkward question wording remain open. Live Gemini/Ollama calls and a fresh vulnerability assessment are not part of this evidence.
+
+Baseline: dev commit 07e9f97ad973c2dcee1edaccbda5f56568260c08. See docs/Study-Smart-Hard-Stop-3-Technical-Memo.docx, docs/hs3-ai-usage-log.md, docs/hs3-risk-and-issue-log.md and evidence/git-baseline.md. Screenshot and final memo additions follow the baseline commit.
