@@ -1,0 +1,87 @@
+[
+  {
+    "file": "server/src/ai/selection.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/app.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/controllers/aiController.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/controllers/historyController.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/lib/prisma.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/middleware/errorHandler.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/routes/aiModels.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/routes/aiRoutes.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/routes/historyRoutes.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/server.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/services/ai/aiService.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/services/ai/prompts.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/services/ai/providers/geminiProvider.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/services/ai/providers/mockProvider.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/services/ai/providers/ollamaProvider.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/services/historyService.js",
+    "exitCode": 0,
+    "output": ""
+  },
+  {
+    "file": "server/src/utils/parseJson.js",
+    "exitCode": 0,
+    "output": ""
+  }
+]

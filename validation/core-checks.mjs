@@ -1,0 +1,24 @@
+import assert from 'node:assert/strict';
+import {writeFileSync,mkdirSync} from 'node:fs';
+import {generateStudyPackWithMock,generateChatWithMock} from '../server/src/services/ai/providers/mockProvider.js';
+import {resolveAiSelection} from '../server/src/ai/selection.js';
+import {parseJsonObject} from '../server/src/utils/parseJson.js';
+const out=process.argv[2]||'evidence/core'; mkdirSync(out,{recursive:true});
+const input={content:'Atomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.',flashcardCount:6,questionCount:5};
+writeFileSync(`${out}/input.json`,JSON.stringify(input,null,2));
+const results=[]; async function check(id,name,fn){try{await fn();results.push({id,name,status:'PASS'});}catch(e){results.push({id,name,status:'FAIL',message:e.message});}}
+let pack;
+await check('C01','Mock structure and requested counts',async()=>{pack=await generateStudyPackWithMock(input);assert.ok(pack.summary);assert.equal(pack.flashcards.length,6);assert.equal(pack.questions.length,5);assert.ok(pack.flashcards.every(c=>c.front&&c.back));assert.ok(pack.questions.every(q=>q.options.includes(q.correctAnswer)));writeFileSync(`${out}/output.json`,JSON.stringify(pack,null,2));});
+await check('C02','Summary covers all four input paragraphs',()=>{for(const term of ['Atomicity','Consistency','Isolation','Durability'])assert.ok(pack.summary.includes(term));});
+await check('C03','Mock repeatability within process',async()=>{assert.deepEqual(await generateStudyPackWithMock(input),pack);});
+await check('C04','Requested cards are unique',()=>{assert.equal(new Set(pack.flashcards.map(c=>c.front)).size,input.flashcardCount);});
+await check('C05','Requested questions are unique',()=>{assert.equal(new Set(pack.questions.map(q=>q.prompt)).size,input.questionCount);});
+await check('C06','Mock chat retrieves relevant note',async()=>{const r=await generateChatWithMock({content:input.content,message:'What is atomicity?'});assert.ok(r.answer.includes('transaction completes entirely'));});
+await check('C07','Mock chat declines unrelated query',async()=>{const r=await generateChatWithMock({content:input.content,message:'Explain photosynthesis'});assert.ok(r.answer.includes('not contain enough information'));});
+await check('C08','Unsupported provider rejected',()=>assert.throws(()=>resolveAiSelection({aiProvider:'invalid'}),/Unsupported/));
+await check('C09','Missing Gemini key rejected',()=>{const old=process.env.GEMINI_API_KEY;delete process.env.GEMINI_API_KEY;try{assert.throws(()=>resolveAiSelection({aiProvider:'gemini',aiModel:'test-model'}),/missing/);}finally{if(old!==undefined)process.env.GEMINI_API_KEY=old;}});
+await check('C10','Explicit mock overrides provider environment',()=>assert.equal(resolveAiSelection({aiProvider:'mock'}).model,'paragraph-aware-demo'));
+await check('C11','Fenced JSON response parsed',()=>assert.deepEqual(parseJsonObject('```json\n{"summary":"test"}\n```'),{summary:'test'}));
+await check('C12','Malformed JSON rejected',()=>assert.throws(()=>parseJsonObject('not json')));
+const report={recordedAt:new Date().toISOString(),runtime:process.version,platform:process.platform,scope:'Direct functions only; no HTTP, database, browser or external provider',results};
+writeFileSync(`${out}/results.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));process.exitCode=results.some(r=>r.status==='FAIL')?1:0;

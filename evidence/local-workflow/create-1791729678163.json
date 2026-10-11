@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-10-11T14:41:18.163Z",
+  "runtime": "v24.14.1",
+  "mode": "create",
+  "log": [
+    {
+      "error": "fetch failed"
+    }
+  ]
+}

@@ -1,148 +1,93 @@
-# StudySmart JS — History-Aware AI Study Assistant
+﻿# StudySmart
 
-StudySmart is a React, Express, PostgreSQL, and Prisma application that creates study summaries, flashcards, practice questions, and a chat assistant.
+StudySmart is a local academic prototype that converts notes into summaries,
+key points, flashcards, and practice questions. It also provides saved topic
+history and Study Chat.
 
-## What is included in this version
+## Project status
 
-- Simplified login where any password works
-- No demo-account button
-- Empty title, subject, and study-note fields after login
-- Top-level AI model dropdown
-- Dynamic Gemini model discovery through the configured API key
-- Dynamic discovery of locally installed Ollama models
-- Local demonstration model when an external model is unavailable
-- PostgreSQL-backed study-topic history
-- Saved notes, summaries, key points, flashcards, and questions
-- Saved global chat history
-- History screen for reopening or deleting previous topics
-- Chat retrieval across all topics saved under the login email
-- Relevant previous notes are selected automatically for each chat question
+CISC 699 Assignment 5: implementation baseline preparation.
 
-## Important login behavior
+The application existed before this sprint. This checkpoint focuses on
+reproducible setup, engineering documentation, risk tracking, and evidence
+that the existing application runs.
 
-This academic project uses simplified login rather than secure authentication. The email address acts as the user identifier. Enter the same email later to retrieve its saved history. The password is not verified or saved.
+Manual checks confirmed application startup, API health, mock generation,
+saved-topic reopening after application restart, and Gemini generation.
+The frontend build also produced its output successfully.
 
-## Requirements
+Clean-copy setup verification, screenshots, and the baseline release
+commit/tag remain pending. The full Assignment 4 evaluation has not
+been completed.
 
-- Node.js 22 or newer
-- npm 10 or newer
-- Docker Desktop, or a locally installed PostgreSQL server
-- A Gemini API key for Gemini models, or Ollama for local AI models
+## Technology
 
-## First-time installation on Windows
+- Frontend: React and Vite
+- Backend: Node.js and Express
+- Database: PostgreSQL with Prisma
+- Providers: Gemini, optional Ollama, and local mock
 
-Extract the ZIP, open PowerShell in the folder containing the root `package.json`, then run:
+Recorded Windows environment:
+Node 24.14.1, npm 11.11.0, Git 2.45.1.windows.1,
+and a running native PostgreSQL 18 service.
 
-```powershell
-npm.cmd install
-```
+The committed package-lock.json records dependency versions.
 
-The package contains `server/.env`. Review its database and AI settings. When starting from the template instead, create it with:
+## Getting started
 
-```powershell
-Copy-Item server/.env.example server/.env
-```
+Follow [the setup guide](docs/setup.md) for installation, database creation,
+configuration, schema setup, and startup.
 
-Start PostgreSQL:
+Start with the mock provider, which needs no AI API key.
+PostgreSQL is still required for saved study material.
 
-```powershell
-docker compose up -d
-```
+After setup, run npm.cmd run dev from the project root.
+Open http://localhost:5173.
 
-Generate the Prisma client and create/update the database tables:
+Run npm.cmd run build to build the frontend.
 
-```powershell
-npm.cmd run db:generate
-npm.cmd run db:push
-```
+## Configuration
 
-Start the frontend and backend:
+Copy server/.env.example to server/.env for a new installation.
+Fill in your own database credentials and optional provider settings.
 
-```powershell
-npm.cmd run dev
-```
+Keep server/.env private. Commit only the placeholder example.
+Do not overwrite an existing working configuration without reviewing it.
 
-Open:
+## Important limitations
 
-```text
-http://localhost:5173
-```
+- Passwords are not verified. Email identifies saved history but does
+  not authenticate the user.
+- Use this baseline locally with synthetic or non-sensitive material.
+- The model dropdown on a reopened topic does not reliably indicate
+  which provider generated its saved content.
+- Mock output demonstrates application behavior, not AI content quality.
+- Successful Gemini generation does not establish factual accuracy.
+- Ollama is available in the code but was not tested in this sprint.
+- The API health endpoint does not test database or provider connectivity.
 
-## Existing PostgreSQL installation
+## Engineering documentation
 
-When PostgreSQL is already installed, update `DATABASE_URL` in `server/.env` and run:
+- [Setup guide](docs/setup.md)
+- [Architecture and repository conventions](docs/architecture.md)
+- [Risk and known-issues log](docs/risk-and-issue-log.md)
+- [Smoke-test record](docs/smoke-tests.md)
+- [Sprint reflection](docs/sprint-reflection.md)
+- [Changelog](CHANGELOG.md)
 
-```powershell
-npm.cmd run db:generate
-npm.cmd run db:push
-npm.cmd run dev
-```
+## Evidence
 
-`prisma db push` updates the database to match the included schema without requiring you to manually create every table.
+The evidence/ folder contains the environment record and frontend build
+output. Screenshots will be collected before submission.
 
-## Gemini setup
+Test records distinguish observed results from planned work.
+See the smoke-test record for coverage and limitations.
 
-Edit `server/.env`:
+## Version control
 
-```env
-AI_PROVIDER=gemini
-GEMINI_API_KEY=your_key_here
-GEMINI_MODEL=your_preferred_default_model
-```
+Repository: https://github.com/sulpya00/studysmart-js
 
-The dropdown requests the list of models available to the key. The model selected in the dropdown is sent to the backend for each study-pack or chat request.
+Baseline preparation uses dev. Future work follows the branch conventions
+in docs/architecture.md.
 
-## Ollama setup
-
-Install Ollama, start it, and pull at least one model:
-
-```powershell
-ollama pull gemma3:4b
-```
-
-Edit `server/.env`:
-
-```env
-AI_PROVIDER=ollama
-OLLAMA_BASE_URL=http://localhost:11434
-OLLAMA_MODEL=gemma3:4b
-```
-
-Restart the application. Models returned by Ollama's local `/api/tags` endpoint appear in the dropdown.
-
-## How saved history works
-
-Creating a study pack saves a `Note` with its latest `Summary`, `FlashcardSet`, and `QuestionSet`. The History screen loads those records using the signed-in email. Opening a topic restores the original notes and generated study materials.
-
-Study Chat uses one saved global chat session per email. Before answering, the backend:
-
-1. Loads the summaries of saved topics.
-2. Scores titles, subjects, summaries, and notes against the question.
-3. Selects the most relevant full-note excerpts.
-4. Sends the summary index, relevant notes, and recent chat to the selected model.
-5. Saves both the student's question and the assistant's answer.
-
-## Main API endpoints
-
-```text
-GET    /api/health
-GET    /api/ai/models
-POST   /api/ai/study-pack
-POST   /api/ai/chat
-POST   /api/ai/flashcards
-GET    /api/history/topics?userEmail=...
-GET    /api/history/topics/:topicId?userEmail=...
-DELETE /api/history/topics/:topicId?userEmail=...
-GET    /api/history/chat?userEmail=...
-```
-
-## Common issue: history does not load
-
-Confirm PostgreSQL is running, then run:
-
-```powershell
-npm.cmd run db:generate
-npm.cmd run db:push
-```
-
-Also confirm that `DATABASE_URL` in `server/.env` points to the running `studysmart` database.
+The baseline tag and final commit will be recorded after verification.

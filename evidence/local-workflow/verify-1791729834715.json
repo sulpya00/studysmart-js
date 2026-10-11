@@ -1,0 +1,155 @@
+{
+  "recordedAt": "2026-10-11T14:43:54.715Z",
+  "runtime": "v24.14.1",
+  "mode": "verify",
+  "log": [
+    {
+      "path": "/api/health",
+      "status": 200,
+      "response": {
+        "status": "ok",
+        "provider": "gemini",
+        "timestamp": "2026-10-11T14:43:54.548Z"
+      }
+    },
+    {
+      "path": "/api/history/topics?userEmail=hs3-1791729760271%40example.com",
+      "status": 200,
+      "response": {
+        "topics": [
+          {
+            "id": "cmv3xmzio0002c5as03jeiosr",
+            "title": "HS3 Database Transactions",
+            "subject": "Databases",
+            "summary": "Atomicity means that a transaction completes entirely or has no effect. Consistency preserves database rules before and after a transaction. Isolation prevents concurrent transactions from interfering with one another. Durability means committed changes survive a restart.",
+            "createdAt": "2026-10-11T14:42:40.847Z",
+            "updatedAt": "2026-10-11T14:42:40.847Z"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/api/history/topics/cmv3xmzio0002c5as03jeiosr?userEmail=hs3-1791729760271%40example.com",
+      "status": 200,
+      "response": {
+        "topic": {
+          "id": "cmv3xmzio0002c5as03jeiosr",
+          "title": "HS3 Database Transactions",
+          "subject": "Databases",
+          "content": "Atomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.",
+          "summary": "Atomicity means that a transaction completes entirely or has no effect. Consistency preserves database rules before and after a transaction. Isolation prevents concurrent transactions from interfering with one another. Durability means committed changes survive a restart.",
+          "keyPoints": [
+            "Atomicity means that a transaction completes entirely or has no effect.",
+            "Consistency preserves database rules before and after a transaction.",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "Durability means committed changes survive a restart."
+          ],
+          "flashcards": [
+            {
+              "front": "What is Atomicity?",
+              "back": "that a transaction completes entirely or has no effect",
+              "reviewStatus": "NEW"
+            },
+            {
+              "front": "What do the notes explain about Consistency preserves database rules before and after?",
+              "back": "Consistency preserves database rules before and after a transaction.",
+              "reviewStatus": "NEW"
+            },
+            {
+              "front": "What does Isolation prevent?",
+              "back": "Isolation prevents concurrent transactions from interfering with one another.",
+              "reviewStatus": "NEW"
+            },
+            {
+              "front": "What is Durability?",
+              "back": "committed changes survive a restart",
+              "reviewStatus": "NEW"
+            },
+            {
+              "front": "What is Atomicity?",
+              "back": "that a transaction completes entirely or has no effect",
+              "reviewStatus": "NEW"
+            },
+            {
+              "front": "What do the notes explain about Consistency preserves database rules before and after?",
+              "back": "Consistency preserves database rules before and after a transaction.",
+              "reviewStatus": "NEW"
+            }
+          ],
+          "questions": [
+            {
+              "prompt": "What is Atomicity?",
+              "options": [
+                "that a transaction completes entirely or has no effect",
+                "Consistency preserves database rules before and after a transaction.",
+                "Isolation prevents concurrent transactions from interfering with one another.",
+                "committed changes survive a restart"
+              ],
+              "correctAnswer": "that a transaction completes entirely or has no effect",
+              "explanation": "The notes explain that that a transaction completes entirely or has no effect."
+            },
+            {
+              "prompt": "What do the notes explain about Consistency preserves database rules before and after?",
+              "options": [
+                "that a transaction completes entirely or has no effect",
+                "Isolation prevents concurrent transactions from interfering with one another.",
+                "committed changes survive a restart",
+                "Consistency preserves database rules before and after a transaction."
+              ],
+              "correctAnswer": "Consistency preserves database rules before and after a transaction.",
+              "explanation": "The notes explain that Consistency preserves database rules before and after a transaction."
+            },
+            {
+              "prompt": "What does Isolation prevent?",
+              "options": [
+                "Consistency preserves database rules before and after a transaction.",
+                "committed changes survive a restart",
+                "Isolation prevents concurrent transactions from interfering with one another.",
+                "that a transaction completes entirely or has no effect"
+              ],
+              "correctAnswer": "Isolation prevents concurrent transactions from interfering with one another.",
+              "explanation": "The notes explain that Isolation prevents concurrent transactions from interfering with one another."
+            },
+            {
+              "prompt": "What is Durability?",
+              "options": [
+                "Isolation prevents concurrent transactions from interfering with one another.",
+                "committed changes survive a restart",
+                "that a transaction completes entirely or has no effect",
+                "Consistency preserves database rules before and after a transaction."
+              ],
+              "correctAnswer": "committed changes survive a restart",
+              "explanation": "The notes explain that committed changes survive a restart."
+            },
+            {
+              "prompt": "What is Atomicity?",
+              "options": [
+                "that a transaction completes entirely or has no effect",
+                "Consistency preserves database rules before and after a transaction.",
+                "Isolation prevents concurrent transactions from interfering with one another.",
+                "committed changes survive a restart"
+              ],
+              "correctAnswer": "that a transaction completes entirely or has no effect",
+              "explanation": "The notes explain that that a transaction completes entirely or has no effect."
+            }
+          ],
+          "createdAt": "2026-10-11T14:42:40.847Z",
+          "updatedAt": "2026-10-11T14:42:40.847Z"
+        }
+      }
+    },
+    {
+      "path": "/api/ai/study-pack",
+      "status": 400,
+      "response": {
+        "message": "Please check the submitted information.",
+        "issues": [
+          {
+            "path": "content",
+            "message": "Too small: expected string to have >=40 characters"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "recordedAt": "2026-10-11T14:01:00.704Z",
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "scope": "Direct functions only; no HTTP, database, browser or external provider",
+  "results": [
+    {
+      "id": "C01",
+      "name": "Mock structure and requested counts",
+      "status": "PASS"
+    },
+    {
+      "id": "C02",
+      "name": "Summary covers all four input paragraphs",
+      "status": "PASS"
+    },
+    {
+      "id": "C03",
+      "name": "Mock repeatability within process",
+      "status": "PASS"
+    },
+    {
+      "id": "C04",
+      "name": "Requested cards are unique",
+      "status": "FAIL",
+      "message": "Expected values to be strictly equal:\n\n4 !== 6\n"
+    },
+    {
+      "id": "C05",
+      "name": "Requested questions are unique",
+      "status": "FAIL",
+      "message": "Expected values to be strictly equal:\n\n4 !== 5\n"
+    },
+    {
+      "id": "C06",
+      "name": "Mock chat retrieves relevant note",
+      "status": "PASS"
+    },
+    {
+      "id": "C07",
+      "name": "Mock chat declines unrelated query",
+      "status": "PASS"
+    },
+    {
+      "id": "C08",
+      "name": "Unsupported provider rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "C09",
+      "name": "Missing Gemini key rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "C10",
+      "name": "Explicit mock overrides provider environment",
+      "status": "PASS"
+    },
+    {
+      "id": "C11",
+      "name": "Fenced JSON response parsed",
+      "status": "PASS"
+    },
+    {
+      "id": "C12",
+      "name": "Malformed JSON rejected",
+      "status": "PASS"
+    }
+  ]
+}

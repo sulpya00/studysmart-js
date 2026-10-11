@@ -1,0 +1,5 @@
+{
+  "content": "Atomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.",
+  "flashcardCount": 6,
+  "questionCount": 5
+}

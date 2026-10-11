@@ -1,0 +1,10 @@
+{
+  "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "node": "v24.19.0",
+  "npm": "11.9.0",
+  "sourceArchive": "studysmart-js(3).zip",
+  "sourceArchiveSHA256": "817bae26470245e81c07492ff1e9367407bc015cd449e23b51fb98132b1dba04",
+  "postgres": "not installed in validation environment",
+  "docker": "not installed in validation environment",
+  "sourceChanges": "No application source changed; validation scripts and documentation added."
+}

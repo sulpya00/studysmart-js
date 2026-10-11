@@ -1,0 +1,92 @@
+{
+  "recordedAt": "2026-10-11T14:02:16.115Z",
+  "scope": "HTTP without database or external AI calls",
+  "results": [
+    {
+      "id": "H01",
+      "path": "/api/health",
+      "status": "PASS",
+      "httpStatus": 200,
+      "response": {
+        "status": "ok",
+        "provider": "mock",
+        "timestamp": "2026-10-11T14:02:16.078Z"
+      }
+    },
+    {
+      "id": "H02",
+      "path": "/api/ai/study-pack",
+      "status": "PASS",
+      "httpStatus": 400,
+      "response": {
+        "message": "Please check the submitted information.",
+        "issues": [
+          {
+            "path": "content",
+            "message": "Too small: expected string to have >=40 characters"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H03",
+      "path": "/api/history/topics?userEmail=invalid",
+      "status": "PASS",
+      "httpStatus": 400,
+      "response": {
+        "message": "Please check the submitted information.",
+        "issues": [
+          {
+            "path": "",
+            "message": "Invalid email address"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H04",
+      "path": "/api/ai/flashcards",
+      "status": "PASS",
+      "httpStatus": 200,
+      "response": {
+        "flashcards": [
+          {
+            "front": "What is Atomicity?",
+            "back": "that a transaction completes entirely or has no effect"
+          },
+          {
+            "front": "What do the notes explain about Consistency preserves database rules before and after?",
+            "back": "Consistency preserves database rules before and after a transaction."
+          },
+          {
+            "front": "What does Isolation prevent?",
+            "back": "Isolation prevents concurrent transactions from interfering with one another."
+          },
+          {
+            "front": "What is Durability?",
+            "back": "committed changes survive a restart"
+          },
+          {
+            "front": "What is Atomicity?",
+            "back": "that a transaction completes entirely or has no effect"
+          },
+          {
+            "front": "What do the notes explain about Consistency preserves database rules before and after?",
+            "back": "Consistency preserves database rules before and after a transaction."
+          }
+        ],
+        "provider": "mock",
+        "model": "paragraph-aware-demo"
+      }
+    },
+    {
+      "id": "H05",
+      "path": "/api/ai/study-pack",
+      "status": "PASS",
+      "httpStatus": 400,
+      "response": {
+        "message": "Gemini is selected, but GEMINI_API_KEY is missing."
+      }
+    }
+  ]
+}

@@ -721,7 +721,6 @@ function LoadingState() {
 function EmptySummaryState() {
   return (
     <div className="empty-state">
-      <div className="empty-state__icon">✦</div>
       <strong>Your saved summary will appear here</strong>
       <p>
         The notes, summary, flashcards, and practice questions will remain available after
