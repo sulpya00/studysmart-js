@@ -1,0 +1,13 @@
+﻿Manually copied from the original terminal output on October 17, 2026; not a new execution.
+
+> studysmart-js@0.2.0 db:push
+> npm run db:push --workspace server
+
+> studysmart-server@0.2.0 db:push
+> prisma db push
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+Datasource "db": PostgreSQL database "studysmart_midpoint_test", schema "public" at "localhost:5432"
+
+Your database is now in sync with your Prisma schema. Done in 318ms
