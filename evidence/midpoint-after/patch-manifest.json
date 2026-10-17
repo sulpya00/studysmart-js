@@ -1,0 +1,17 @@
+{
+  "baseCommit": "aa18a3556e0a560f85c74ed8aee9dbddf0e535c5",
+  "files": {
+    "client/src/App.jsx": "33aef12e9aa91695fc507fd201ac997c8c9e784640375418c9907a42bcf5af69",
+    "server/src/controllers/aiController.js": "f8ab63a6fcdf80eb89e4a496dd7c9f388e6541d421e3d09a8e785032ca90b3ac",
+    "server/src/services/ai/providers/mockProvider.js": "07c92cc143cd8cbda15dadedd9727310a69931544b63bd2f6d4d26cf9d14cec1",
+    "validation/midpoint-checks.mjs": "3317f9044158f519fabaa48845f9b0085ab56e73d99d136b836b68a5c033ccd8",
+    "docs/midpoint-fix-2026-10-16.md": "e7eb55f20312f94724ffb1b2e6240fa6f0303b85913eaf311a3ce46033826843",
+    "evidence/midpoint-before/core/results.json": "8606a85369ea9c3fa5434a24612c4d3891ee966b8908f5785a6ea22b9a8f2db9",
+    "evidence/midpoint-before/core/output.json": "fa07813f8a94a90f5724f0fabb38bfcd2202091ae17268cc463aa471dba320ac",
+    "evidence/midpoint-before/core/input.json": "9fcf2cf1279237fe83f034cbe8f6bd33812705bc12aeb7bbe5e9d952c9c33310",
+    "evidence/midpoint-after/regression/results.json": "0d13d628ecd1a23a40e708be3ef75fcaf4f5b2f88f02c97f76b182fe8b37fde1",
+    "evidence/midpoint-after/regression/outputs.json": "8b75cefe8ed71038cf5167fca628fdad7558811afe6566756b7a714085b02883",
+    "evidence/midpoint-after/original-core/results.json": "9077361f13fdff58862860251ef41ad569b05bf6cfee0e5478c51baccf34f8ec",
+    "evidence/midpoint-after/original-core/input.json": "9fcf2cf1279237fe83f034cbe8f6bd33812705bc12aeb7bbe5e9d952c9c33310"
+  }
+}

@@ -67,6 +67,13 @@ function cleanQuestions(questions, limit) {
     .slice(0, limit);
 }
 
+function countWarnings(flashcards, requestedCards, questions = [], requestedQuestions = 0) {
+  const warnings = [];
+  if (flashcards.length < requestedCards) warnings.push(`Returned ${flashcards.length} flashcards out of ${requestedCards} requested. The provider did not supply enough usable items; review the notes or request fewer items.`);
+  if (questions.length < requestedQuestions) warnings.push(`Returned ${questions.length} questions out of ${requestedQuestions} requested. The provider did not supply enough usable items; review the notes or request fewer items.`);
+  return warnings;
+}
+
 export async function createStudyPack(req, res, next) {
   try {
     const input = studyPackRequestSchema.parse(req.body);
@@ -94,7 +101,7 @@ export async function createStudyPack(req, res, next) {
       result,
     });
 
-    res.json({ ...result, topicId: note.id, saved: true });
+    res.json({ ...result, warnings: countWarnings(result.flashcards, input.flashcardCount, result.questions, input.questionCount), topicId: note.id, saved: true });
   } catch (error) {
     next(error);
   }
@@ -163,7 +170,7 @@ export async function createFlashcards(req, res, next) {
     const result = await generateFlashcards(input);
     const flashcards = cleanFlashcards(result.flashcards, input.count);
     if (flashcards.length === 0) throw new Error("The AI provider did not return any flashcards.");
-    res.json({ flashcards, provider: result.provider, model: result.model });
+    res.json({ flashcards, warnings: countWarnings(flashcards, input.count), provider: result.provider, model: result.model });
   } catch (error) {
     next(error);
   }

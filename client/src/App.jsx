@@ -230,8 +230,6 @@ export default function App() {
         title: topic.title,
         subject: topic.subject || "",
         content: topic.content,
-        flashcardCount: topic.flashcards?.length || current.flashcardCount,
-        questionCount: topic.questions?.length || current.questionCount,
       }));
       setStudyPack({
         topicId: topic.id,
@@ -543,6 +541,7 @@ export default function App() {
                     </span>
                   </div>
                   <p className="summary-text">{studyPack.summary}</p>
+                  {studyPack.warnings?.map((warning) => <p key={warning} role="status">{warning}</p>)}
                   <h3>Key points</h3>
                   <ul className="key-point-list">
                     {studyPack.keyPoints.map((point, index) => <li key={`${point}-${index}`}>{point}</li>)}

@@ -115,6 +115,7 @@ function expandFacts(sentences) {
 function analyzeStatement(sentence) {
   const cleaned = cleanSentence(sentence);
   const patterns = [
+    { regex: /^(.+?)\s+(preserves)\s+(.+)$/i, question: (subject) => `What does ${subject} preserve?` },
     { regex: /^(.+?)\s+(requires)\s+(.+)$/i, question: (subject) => `What does ${subject} require?` },
     { regex: /^(.+?)\s+(means|refers to|is|are)\s+(.+)$/i, question: (subject) => `What is ${subject}?` },
     { regex: /^(.+?)\s+(organizes|uses|allows|helps|prevents|removes|includes|contains|determines|provides|improves|reduces|improve|reduce|supports|strengthens|affects|protects|encourages|maintains)\s+(.+)$/i, question: (subject, verb) => {
@@ -146,12 +147,10 @@ function analyzeStatement(sentence) {
     }
   }
 
-  const words = cleaned.split(/\s+/);
-  const subject = words.slice(0, Math.min(7, words.length)).join(" ");
   return {
-    subject,
+    subject: cleaned,
     predicate: cleaned,
-    question: `What do the notes explain about ${subject}?`,
+    question: `Complete this statement from the notes: ${cleaned.split(/\s+/).slice(0, 3).join(" ")} ...`,
     answer: `${cleaned}.`,
   };
 }
@@ -165,7 +164,7 @@ function rotateOptions(correct, distractors, index) {
     unique.push([
       "The supplied notes do not support this statement.",
       "It is unrelated to the main topic.",
-      "It removes the need for all other healthy habits.",
+      "The notes state the opposite of this explanation.",
     ][unique.length - 1] || "None of the supplied notes support this statement.");
   }
 
@@ -175,11 +174,11 @@ function rotateOptions(correct, distractors, index) {
 
 export async function generateStudyPackWithMock({ content, flashcardCount, questionCount }) {
   const sentences = sentencesFrom(content);
-  const source = sentences.length ? sentences : [content.trim()];
+  const source = sentences.length ? sentences : [content.trim()].filter(Boolean);
   const representatives = representativeSentences(content);
   const facts = expandFacts(source);
   const statements = facts
-    .map(analyzeStatement)
+    .map((fact) => ({ ...analyzeStatement(fact), source: fact }))
     .filter((statement, index, all) => all.findIndex((item) => item.question.toLowerCase() === statement.question.toLowerCase()) === index);
 
   const summarySentences = representatives
@@ -194,13 +193,11 @@ export async function generateStudyPackWithMock({ content, flashcardCount, quest
   const flashcardStatements = spreadItems(statements, Math.min(flashcardCount, statements.length));
   const questionStatements = spreadItems(statements, Math.min(questionCount, statements.length));
 
-  const flashcards = Array.from({ length: flashcardCount }, (_, index) => {
-    const statement = flashcardStatements[index % flashcardStatements.length];
+  const flashcards = flashcardStatements.map((statement) => {
     return { front: statement.question, back: statement.answer };
   });
 
-  const questions = Array.from({ length: questionCount }, (_, index) => {
-    const statement = questionStatements[index % questionStatements.length];
+  const questions = questionStatements.map((statement, index) => {
     const distractors = spreadItems(
       statements.filter((item) => item.answer !== statement.answer),
       3,
@@ -210,7 +207,7 @@ export async function generateStudyPackWithMock({ content, flashcardCount, quest
       prompt: statement.question,
       options: rotateOptions(statement.answer, distractors, index),
       correctAnswer: statement.answer,
-      explanation: `The notes explain that ${cleanSentence(statement.answer)}.`,
+      explanation: `Source note: ${statement.source}`,
     };
   });
 
