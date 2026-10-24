@@ -1,0 +1,2042 @@
+[
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F01",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 7,
+    "expectedFact": "An index can speed up reads but adds maintenance work to writes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 8,
+    "expectedFact": "A rollback discards the changes of an uncommitted transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 9,
+    "expectedFact": "A deadlock occurs when transactions wait on one another in a cycle.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 10,
+    "expectedFact": "Normalization reduces redundant storage of facts.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 11,
+    "expectedFact": "A backup is a separate copy used for recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 12,
+    "expectedFact": "A transaction log records changes used during recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 7,
+    "expectedFact": "An index can speed up reads but adds maintenance work to writes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 8,
+    "expectedFact": "A rollback discards the changes of an uncommitted transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 9,
+    "expectedFact": "A deadlock occurs when transactions wait on one another in a cycle.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 10,
+    "expectedFact": "Normalization reduces redundant storage of facts.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 11,
+    "expectedFact": "A backup is a separate copy used for recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 12,
+    "expectedFact": "A transaction log records changes used during recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 7,
+    "expectedFact": "An index can speed up reads but adds maintenance work to writes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 8,
+    "expectedFact": "A rollback discards the changes of an uncommitted transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 9,
+    "expectedFact": "A deadlock occurs when transactions wait on one another in a cycle.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 10,
+    "expectedFact": "Normalization reduces redundant storage of facts.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 11,
+    "expectedFact": "A backup is a separate copy used for recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 12,
+    "expectedFact": "A transaction log records changes used during recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 7,
+    "expectedFact": "An index can speed up reads but adds maintenance work to writes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 8,
+    "expectedFact": "A rollback discards the changes of an uncommitted transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 9,
+    "expectedFact": "A deadlock occurs when transactions wait on one another in a cycle.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 10,
+    "expectedFact": "Normalization reduces redundant storage of facts.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 11,
+    "expectedFact": "A backup is a separate copy used for recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 12,
+    "expectedFact": "A transaction log records changes used during recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 7,
+    "expectedFact": "An index can speed up reads but adds maintenance work to writes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 8,
+    "expectedFact": "A rollback discards the changes of an uncommitted transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 9,
+    "expectedFact": "A deadlock occurs when transactions wait on one another in a cycle.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 10,
+    "expectedFact": "Normalization reduces redundant storage of facts.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 11,
+    "expectedFact": "A backup is a separate copy used for recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 12,
+    "expectedFact": "A transaction log records changes used during recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 7,
+    "expectedFact": "An index can speed up reads but adds maintenance work to writes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 8,
+    "expectedFact": "A rollback discards the changes of an uncommitted transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 9,
+    "expectedFact": "A deadlock occurs when transactions wait on one another in a cycle.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 10,
+    "expectedFact": "Normalization reduces redundant storage of facts.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 11,
+    "expectedFact": "A backup is a separate copy used for recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F02",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 12,
+    "expectedFact": "A transaction log records changes used during recovery.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F03",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "Consistency preserves database rules before and after a transaction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "Isolation prevents concurrent transactions from observing intermediate changes.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 4,
+    "expectedFact": "Durability preserves committed changes after a restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 5,
+    "expectedFact": "A primary key uniquely identifies a row in a table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F04",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 6,
+    "expectedFact": "A foreign key references a key in another table.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F05",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F05",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F05",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F05",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F05",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F05",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "Atomicity makes a transaction an all-or-nothing operation.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "The handout claims committed transactions survive restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "The later paragraph claims committed transactions are lost after restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 1,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "The notes contain an unresolved contradiction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "The handout claims committed transactions survive restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "The later paragraph claims committed transactions are lost after restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 1,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "The notes contain an unresolved contradiction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "The handout claims committed transactions survive restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "The later paragraph claims committed transactions are lost after restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 2,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "The notes contain an unresolved contradiction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "The handout claims committed transactions survive restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "The later paragraph claims committed transactions are lost after restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 2,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "The notes contain an unresolved contradiction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 1,
+    "expectedFact": "The handout claims committed transactions survive restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 2,
+    "expectedFact": "The later paragraph claims committed transactions are lost after restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 3,
+    "target": "generated-summary",
+    "factId": 3,
+    "expectedFact": "The notes contain an unresolved contradiction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 1,
+    "expectedFact": "The handout claims committed transactions survive restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 2,
+    "expectedFact": "The later paragraph claims committed transactions are lost after restart.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  },
+  {
+    "fixture": "F06",
+    "repeat": 3,
+    "target": "lead-baseline",
+    "factId": 3,
+    "expectedFact": "The notes contain an unresolved contradiction.",
+    "covered": "",
+    "reviewer": "",
+    "rationale": ""
+  }
+]

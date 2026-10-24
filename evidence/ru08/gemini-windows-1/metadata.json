@@ -1,0 +1,30 @@
+{
+  "startedAt": "2026-10-24T00:32:08.705Z",
+  "scope": "Direct generation service only: excludes HTTP cleanup, database, UI, and learning outcomes.",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "repetitions": 3,
+  "order": "fixture-major, sequential; no warmup; no harness retries",
+  "parameters": {
+    "flashcardCount": 6,
+    "questionCount": 5,
+    "temperature": "not explicitly set by application",
+    "seed": "not set"
+  },
+  "runtime": "v24.14.1",
+  "platform": "win32",
+  "arch": "x64",
+  "cpu": "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz",
+  "totalMemory": 16932384768,
+  "commit": "52e7f1ca9d5d8fc5718b1c2845b3b93c98e6537b",
+  "gitStatus": " M docs/ai-usage-log.md\n D evidence/local-workflow/create-1791729678163.json\n D evidence/local-workflow/create-1791729761058.json\n D evidence/local-workflow/restart-confirmation.txt\n D evidence/local-workflow/review.md\n D evidence/local-workflow/verify-1791729834715.json\n?? dependency-audit-after.txt\n?? dependency-fix-output.txt\n?? docs/Study-Smart-Hard-Stop-3-Technical-Memo.docx\n?? docs/ru08/\n?? evidence/audit-current-context.txt\n?? evidence/audit-current.json\n?? evidence/local-workflow-run1-20261011-153550/\n?? evidence/local-workflow/create-1791747351937.json\n?? evidence/local-workflow/verify-1791747370472.json\n?? evidence/ru08/\n?? evidence/uploaded-windows/\n?? package-lock.before-audit.json\n?? validation/ru08/\n",
+  "fixtureSha256": "d59feac1a7b8ae1c792b6e0f4bec840601df35c1b62febedf94081c4fdc4913a",
+  "scriptSha256": "f23dd59fd288aa413e3b1da7fe61ca67b7862fbc7fa221726b46ac486f28dbdc",
+  "lockSha256": "c8ea88737d94e946ff2df52214aa368ae9496b2598e05ab386305106cf8bf2c8",
+  "sourceHashes": {
+    "server/src/services/ai/aiService.js": "9674fd125c469fa4ddff123b10b83ebddd72ca483952fdb0fdda9337a4361d31",
+    "server/src/services/ai/prompts.js": "3b3900ea231f9660ffd05bb4d3d70c31fc289c011537f55a58c7fb1059ab7131",
+    "server/src/services/ai/providers/geminiProvider.js": "a2965dd38081a827f501213c1e7a42a6482785b7af50b6ffd33b39dee34a6329",
+    "server/src/services/ai/providers/mockProvider.js": "07c92cc143cd8cbda15dadedd9727310a69931544b63bd2f6d4d26cf9d14cec1"
+  }
+}

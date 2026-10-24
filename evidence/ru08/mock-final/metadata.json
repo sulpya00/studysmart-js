@@ -1,0 +1,30 @@
+{
+  "startedAt": "2026-10-24T00:26:24.597Z",
+  "scope": "Direct generation service only: excludes HTTP cleanup, database, UI, and learning outcomes.",
+  "provider": "mock",
+  "model": "paragraph-aware-demo",
+  "repetitions": 3,
+  "order": "fixture-major, sequential; no warmup; no harness retries",
+  "parameters": {
+    "flashcardCount": 6,
+    "questionCount": 5,
+    "temperature": "not explicitly set by application",
+    "seed": "not set"
+  },
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "arch": "x64",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "totalMemory": 10451439616,
+  "commit": "52e7f1ca9d5d8fc5718b1c2845b3b93c98e6537b",
+  "gitStatus": "?? evidence/ru08/\n?? validation/ru08/\n",
+  "fixtureSha256": "d59feac1a7b8ae1c792b6e0f4bec840601df35c1b62febedf94081c4fdc4913a",
+  "scriptSha256": "f23dd59fd288aa413e3b1da7fe61ca67b7862fbc7fa221726b46ac486f28dbdc",
+  "lockSha256": "c8ea88737d94e946ff2df52214aa368ae9496b2598e05ab386305106cf8bf2c8",
+  "sourceHashes": {
+    "server/src/services/ai/aiService.js": "9674fd125c469fa4ddff123b10b83ebddd72ca483952fdb0fdda9337a4361d31",
+    "server/src/services/ai/prompts.js": "3b3900ea231f9660ffd05bb4d3d70c31fc289c011537f55a58c7fb1059ab7131",
+    "server/src/services/ai/providers/geminiProvider.js": "a2965dd38081a827f501213c1e7a42a6482785b7af50b6ffd33b39dee34a6329",
+    "server/src/services/ai/providers/mockProvider.js": "07c92cc143cd8cbda15dadedd9727310a69931544b63bd2f6d4d26cf9d14cec1"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "recordedAt": "2026-10-24T00:26:05.244Z",
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "scope": "Mock direct-function and isolated HTTP regression only. No database, browser interaction or live-provider validation. Original count targets and SC2 remain separate.",
+  "results": [
+    {
+      "id": "M01",
+      "name": "Same ACID fixture returns four unique items, not padded requested counts",
+      "status": "PASS"
+    },
+    {
+      "id": "M02",
+      "name": "Adequate notes still fulfill six cards and five questions",
+      "status": "PASS"
+    },
+    {
+      "id": "M03",
+      "name": "Repeated source sentences do not produce repeated items",
+      "status": "PASS"
+    },
+    {
+      "id": "M04",
+      "name": "Single fact returns one item and neutral distractors",
+      "status": "PASS"
+    },
+    {
+      "id": "M05",
+      "name": "Ambiguous and incomplete notes retain source wording without invented completion",
+      "status": "PASS"
+    },
+    {
+      "id": "M06",
+      "name": "Long notes use later facts for items; eight-point summary limit remains explicit",
+      "status": "PASS"
+    },
+    {
+      "id": "M07",
+      "name": "Empty direct input returns no fabricated study items",
+      "status": "PASS"
+    },
+    {
+      "id": "M08",
+      "name": "HTTP flashcard count and shortfall notice",
+      "status": "PASS"
+    },
+    {
+      "id": "M09",
+      "name": "HTTP flashcard count and shortfall notice",
+      "status": "PASS"
+    }
+  ]
+}
