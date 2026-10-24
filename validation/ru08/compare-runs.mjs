@@ -1,0 +1,13 @@
+import { readFileSync, mkdirSync, existsSync, writeFileSync } from 'node:fs';
+const [before='evidence/ru08/gemini-windows-1',after='evidence/ru08/gemini-windows-2',out=`evidence/ru08/comparison-${Date.now()}`]=process.argv.slice(2);
+const read=(dir,file)=>JSON.parse(readFileSync(`${dir}/${file}`,'utf8'));
+const a=read(before,'metadata.json'),b=read(after,'metadata.json');
+if(!b.sourceHashes?.['server/src/services/ai/validateStudyPack.js'])throw Error('After run does not record the new validator; run the updated benchmark first.');
+if(a.fixtureSha256!==b.fixtureSha256)throw Error('Fixtures differ: do not present as a controlled paired comparison.');
+if(a.provider!==b.provider||a.model!==b.model)throw Error('Provider/model differs: rerun the same model or analyze this as a separate experiment.');
+const sa=read(before,'summary.json'),sb=read(after,'summary.json');
+if(sa.attempts!==sb.attempts||a.repetitions!==b.repetitions||JSON.stringify(a.parameters)!==JSON.stringify(b.parameters))throw Error('Run sizes or parameters differ.');
+if(existsSync(out))throw Error('Use a new output directory.');
+const counts=s=>({attempts:s.attempts,returned:s.returned,errors:s.errors,countsMet:s.countsMet,structurallyValid:s.allItemsStructurallyValid,exactDuplicateFree:s.exactDuplicateFree,successfulLatencyMs:s.successfulLatencyMs});
+const result={before,after,model:a.model,beforeResults:counts(sa),afterResults:counts(sb),interpretation:'After includes strict validation: malformed packs count as errors instead of returned invalid packs. Read rejectedOutput/validationIssues in raw logs. Lower acceptance is not proof of worse generation, and accepting fewer cards is not count-criterion success. Fact grounding and semantic repetition still require review.',runtimeComparison:{before:{runtime:a.runtime,platform:a.platform,cpu:a.cpu},after:{runtime:b.runtime,platform:b.platform,cpu:b.cpu}},semanticQuality:'PENDING human review; do not infer factual improvement from structural pass rates.'};
+mkdirSync(out,{recursive:true});writeFileSync(`${out}/comparison.json`,JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));

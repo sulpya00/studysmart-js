@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-js@0.2.0 build
+> npm run build --workspace client
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-client@0.2.0 build
+> vite build
+
+vite v8.1.5 building client environment for production...
+[2Ktransforming...✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.28 kB
+dist/assets/index-cynBroU0.css   15.10 kB │ gzip:  4.10 kB
+dist/assets/index-DvYw9VF9.js   210.25 kB │ gzip: 65.31 kB
+
+✓ built in 299ms

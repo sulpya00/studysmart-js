@@ -1,0 +1,12 @@
+Error: The AI provider returned an invalid study pack. Please try again.
+    at validateStudyPack (file:///workspace/scratch/644a01f0cadd/studysmart-ru08-review/server/src/services/ai/validateStudyPack.js:43:19)
+    at generateStudyPack (file:///workspace/scratch/644a01f0cadd/studysmart-ru08-review/server/src/services/ai/aiService.js:24:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async createStudyPack (file:///workspace/scratch/644a01f0cadd/studysmart-ru08-review/server/src/controllers/aiController.js:80:23) {
+  statusCode: 502,
+  code: 'INVALID_STUDY_PACK'
+}
+{
+  "pass": 30,
+  "fail": 0
+}

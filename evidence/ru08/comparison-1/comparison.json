@@ -1,0 +1,45 @@
+{
+  "before": "evidence/ru08/gemini-windows-1",
+  "after": "evidence/ru08/gemini-windows-2",
+  "model": "gemini-3.1-flash-lite",
+  "beforeResults": {
+    "attempts": 18,
+    "returned": 18,
+    "errors": 0,
+    "countsMet": 18,
+    "structurallyValid": 17,
+    "exactDuplicateFree": 18,
+    "successfulLatencyMs": {
+      "median": 3659.7456500000008,
+      "min": 2540.511500000008,
+      "max": 18327.346999999994
+    }
+  },
+  "afterResults": {
+    "attempts": 18,
+    "returned": 15,
+    "errors": 3,
+    "countsMet": 7,
+    "structurallyValid": 15,
+    "exactDuplicateFree": 15,
+    "successfulLatencyMs": {
+      "median": 17841.252199999988,
+      "min": 2178.1113999999943,
+      "max": 77790.61309999999
+    }
+  },
+  "interpretation": "After includes strict validation: malformed packs count as errors instead of returned invalid packs. Read rejectedOutput/validationIssues in raw logs. Lower acceptance is not proof of worse generation, and accepting fewer cards is not count-criterion success. Fact grounding and semantic repetition still require review.",
+  "runtimeComparison": {
+    "before": {
+      "runtime": "v24.14.1",
+      "platform": "win32",
+      "cpu": "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz"
+    },
+    "after": {
+      "runtime": "v24.14.1",
+      "platform": "win32",
+      "cpu": "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz"
+    }
+  },
+  "semanticQuality": "PENDING human review; do not infer factual improvement from structural pass rates."
+}

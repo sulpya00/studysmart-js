@@ -1,3 +1,4 @@
+import { validateStudyPack } from "./validateStudyPack.js";
 import { resolveAiSelection } from "../../ai/selection.js";
 import { chatPrompt, studyPackPrompt } from "./prompts.js";
 import { generateWithGemini } from "./providers/geminiProvider.js";
@@ -19,7 +20,8 @@ export async function generateStudyPack(input) {
   if (selection.provider === "mock") {
     return generateStudyPackWithMock(input);
   }
-  return generateJson(studyPackPrompt(input), selection);
+  const generated = await generateJson(studyPackPrompt(input), selection);
+  return validateStudyPack(generated, input);
 }
 
 export async function generateChatReply(input) {

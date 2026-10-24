@@ -1,0 +1,20 @@
+{
+  "server/src/services/ai/aiService.js": "108c91bb9fcb8814a431c0451c465e7d061069e08006f517785bba8d000d2e7f",
+  "server/src/services/ai/prompts.js": "55d7feb068e6d22362dd25c1ebc1912a8924c25db972371b864cc08e6cd8befb",
+  "server/src/services/ai/validateStudyPack.js": "7f7f14cd76b6dead16a68df7931b90067ac664241b4a3dde6fdca9ba8eead744",
+  "validation/ru08/benchmark.mjs": "429afc5fc2c58a94c7259de3767a92050118a78c79889871ccaa64e782a1affb",
+  "validation/ru08/validation-regression.mjs": "1af1ad2d1983a6e0df82e0348fc9682f77d7d63cf5c17b145bd1068d4eab997c",
+  "validation/ru08/compare-runs.mjs": "95541af978a2197320d5c7763f0423d6309090f7ae32d5d417b431f4fdee2906",
+  "evidence/ru08/fix-build.txt": "7409549a780b4f5f811018ed6c15756b98b656b716d6046eb2339ad4ada651a8",
+  "docs/ru08/validation-fix/APPLY-AND-COMPARE.md": "6e57b5dfd8b1af1498372d2c9b84fba86ccbb40bc41642710ac188f596260bc6",
+  "docs/ru08/review-2a8424d/CONTENT-REVIEW.md": "6c6b639869e54ceee081b187dcd9be48582a6cee7ab24651149f6473534c3946",
+  "docs/ru08/review-2a8424d/NEXT-STEPS-AND-AI-USAGE.md": "aa8c53e6213979d0168fc77bd31e7678f5caf7e371afa6fd6f70699b19373d5c",
+  "docs/ru08/review-2a8424d/STUDENT-REVIEW.md": "9d39bdbc16b307b9b8ff5166b27fcfc45e9c7928b69e472c8bf520895b3c5bf3",
+  "evidence/ru08/ai-review-2a8424d/mechanical-audit.json": "ceb863cd7b66f14394b3445b0010cd76209eae5ed96c5f7e481e47fa209caf3e",
+  "evidence/ru08/ai-review-2a8424d/audit.py": "422343e46e713daf0871bebd3d512ee8e7e25bec375db89e22d25937e88d28b1",
+  "evidence/ru08/fix-local/results.json": "6ba3f816b051f7ef2fc3ae9fbf1fceff331a7e776473c65e267b68128cd68f8c",
+  "evidence/ru08/fix-local/execution.txt": "02a030a8f28aaf3b7da864b3342143381a4e6a0258f4cca2a56a3067f46b090d",
+  "evidence/ru08/fix-http/results.json": "952d865f8bb7364dccc1f206f895ab7e211040b7be67a384b72523ff37779024",
+  "evidence/ru08/fix-midpoint/outputs.json": "8b75cefe8ed71038cf5167fca628fdad7558811afe6566756b7a714085b02883",
+  "evidence/ru08/fix-midpoint/results.json": "7b33e1cd7e486e0013809c3a6e523f7f5ddda4b4b438ab44674d6395f2741f4f"
+}

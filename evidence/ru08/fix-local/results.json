@@ -1,0 +1,160 @@
+{
+  "recordedAt": "2026-10-24T00:59:43.947Z",
+  "runtime": "v24.19.0",
+  "platform": "linux",
+  "scope": "Historical provider-output replay, deliberate malformed payloads, and local Ollama-protocol stub through real HTTP routes. No live generation, database persistence or semantic-quality measurement.",
+  "sourceSha256": "fa3091adf2566a5be40a6707f77392844217304d4d4b13927bf7d6e938025b63",
+  "results": [
+    {
+      "id": "replay-F01-1",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F01-2",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F01-3",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F02-1",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F02-2",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F02-3",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F03-1",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F03-2",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F03-3",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F04-1",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F04-2",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F04-3",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F05-1",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F05-2",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F05-3",
+      "status": "PASS",
+      "details": "Historical malformed output rejected; this is a replay, not a new generation."
+    },
+    {
+      "id": "replay-F06-1",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F06-2",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "replay-F06-3",
+      "status": "PASS",
+      "details": "Historical structurally valid pack accepted; semantics not assessed."
+    },
+    {
+      "id": "missing-summary",
+      "status": "PASS"
+    },
+    {
+      "id": "empty-card-answer",
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate-options",
+      "status": "PASS"
+    },
+    {
+      "id": "answer-not-in-options",
+      "status": "PASS"
+    },
+    {
+      "id": "missing-explanation",
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate-card",
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate-question",
+      "status": "PASS"
+    },
+    {
+      "id": "empty-items",
+      "status": "PASS"
+    },
+    {
+      "id": "too-many-cards",
+      "status": "PASS"
+    },
+    {
+      "id": "valid-shortfall",
+      "status": "PASS"
+    },
+    {
+      "id": "HTTP-invalid-pack-502-before-save",
+      "status": "PASS",
+      "details": {
+        "status": 502,
+        "body": {
+          "message": "The AI provider returned an invalid study pack. Please try again."
+        }
+      }
+    },
+    {
+      "id": "HTTP-valid-shortfall-warning",
+      "status": "PASS",
+      "details": {
+        "status": 200,
+        "returned": 1,
+        "warnings": [
+          "Returned 1 flashcards out of 6 requested. The provider did not supply enough usable items; review the notes or request fewer items."
+        ]
+      }
+    }
+  ]
+}

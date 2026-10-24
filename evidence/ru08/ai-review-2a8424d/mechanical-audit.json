@@ -1,0 +1,193 @@
+{
+  "source": "evidence/ru08/gemini-windows-1/runs.jsonl",
+  "sourceSha256": "fa3091adf2566a5be40a6707f77392844217304d4d4b13927bf7d6e938025b63",
+  "reviewType": "Mechanical measures; not semantic scores",
+  "runs": [
+    {
+      "fixture": "F01",
+      "repeat": 1,
+      "inputWords": 50,
+      "summaryWords": 128,
+      "baselineWords": 50,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F01",
+      "repeat": 2,
+      "inputWords": 50,
+      "summaryWords": 110,
+      "baselineWords": 50,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F01",
+      "repeat": 3,
+      "inputWords": 50,
+      "summaryWords": 109,
+      "baselineWords": 50,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F02",
+      "repeat": 1,
+      "inputWords": 327,
+      "summaryWords": 115,
+      "baselineWords": 109,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F02",
+      "repeat": 2,
+      "inputWords": 327,
+      "summaryWords": 123,
+      "baselineWords": 109,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F02",
+      "repeat": 3,
+      "inputWords": 327,
+      "summaryWords": 126,
+      "baselineWords": 109,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F03",
+      "repeat": 1,
+      "inputWords": 56,
+      "summaryWords": 126,
+      "baselineWords": 56,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F03",
+      "repeat": 2,
+      "inputWords": 56,
+      "summaryWords": 120,
+      "baselineWords": 56,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F03",
+      "repeat": 3,
+      "inputWords": 56,
+      "summaryWords": 132,
+      "baselineWords": 56,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F04",
+      "repeat": 1,
+      "inputWords": 100,
+      "summaryWords": 127,
+      "baselineWords": 100,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F04",
+      "repeat": 2,
+      "inputWords": 100,
+      "summaryWords": 114,
+      "baselineWords": 100,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F04",
+      "repeat": 3,
+      "inputWords": 100,
+      "summaryWords": 111,
+      "baselineWords": 100,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F05",
+      "repeat": 1,
+      "inputWords": 7,
+      "summaryWords": 84,
+      "baselineWords": 7,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F05",
+      "repeat": 2,
+      "inputWords": 7,
+      "summaryWords": 87,
+      "baselineWords": 7,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F05",
+      "repeat": 3,
+      "inputWords": 7,
+      "summaryWords": 98,
+      "baselineWords": 7,
+      "validCards": 6,
+      "validQuestions": 4,
+      "missingOptionsQuestionIds": [
+        5
+      ]
+    },
+    {
+      "fixture": "F06",
+      "repeat": 1,
+      "inputWords": 29,
+      "summaryWords": 61,
+      "baselineWords": 29,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F06",
+      "repeat": 2,
+      "inputWords": 29,
+      "summaryWords": 79,
+      "baselineWords": 29,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    },
+    {
+      "fixture": "F06",
+      "repeat": 3,
+      "inputWords": 29,
+      "summaryWords": 55,
+      "baselineWords": 29,
+      "validCards": 6,
+      "validQuestions": 5,
+      "missingOptionsQuestionIds": []
+    }
+  ],
+  "shortRuns": 15,
+  "shortRunsExpanded": 15,
+  "validCards": 108,
+  "validQuestions": 89
+}

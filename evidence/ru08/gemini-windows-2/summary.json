@@ -1,0 +1,15 @@
+{
+  "attempts": 18,
+  "returned": 15,
+  "errors": 3,
+  "countsMet": 7,
+  "allItemsStructurallyValid": 15,
+  "exactDuplicateFree": 15,
+  "successfulLatencyMs": {
+    "median": 17841.252199999988,
+    "min": 2178.1113999999943,
+    "max": 77790.61309999999
+  },
+  "humanQualityReview": "PENDING; automated structural checks do not establish factual accuracy",
+  "completedAt": "2026-10-24T01:11:39.733Z"
+}

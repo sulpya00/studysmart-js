@@ -1,0 +1,31 @@
+{
+  "startedAt": "2026-10-24T01:04:50.128Z",
+  "scope": "Direct generation service only: excludes HTTP cleanup, database, UI, and learning outcomes.",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "repetitions": 3,
+  "order": "fixture-major, sequential; no warmup; no harness retries",
+  "parameters": {
+    "flashcardCount": 6,
+    "questionCount": 5,
+    "temperature": "not explicitly set by application",
+    "seed": "not set"
+  },
+  "runtime": "v24.14.1",
+  "platform": "win32",
+  "arch": "x64",
+  "cpu": "11th Gen Intel(R) Core(TM) i7-11700 @ 2.50GHz",
+  "totalMemory": 16932384768,
+  "commit": "2a8424d3981b1add6f50d07c8bbc1fb5db16c0a7",
+  "gitStatus": " M docs/ai-usage-log.md\n D evidence/local-workflow/create-1791729678163.json\n D evidence/local-workflow/create-1791729761058.json\n D evidence/local-workflow/restart-confirmation.txt\n D evidence/local-workflow/review.md\n D evidence/local-workflow/verify-1791729834715.json\n M server/src/services/ai/aiService.js\n M server/src/services/ai/prompts.js\n M validation/ru08/benchmark.mjs\n?? dependency-audit-after.txt\n?? dependency-fix-output.txt\n?? docs/Study-Smart-Hard-Stop-3-Technical-Memo.docx\n?? docs/ru08/review-2a8424d/\n?? docs/ru08/validation-fix/\n?? evidence/audit-current-context.txt\n?? evidence/audit-current.json\n?? evidence/local-workflow-run1-20261011-153550/\n?? evidence/local-workflow/create-1791747351937.json\n?? evidence/local-workflow/verify-1791747370472.json\n?? evidence/ru08/ai-review-2a8424d/\n?? evidence/ru08/fix-build.txt\n?? evidence/ru08/fix-http/\n?? evidence/ru08/fix-local/\n?? evidence/ru08/fix-midpoint/\n?? evidence/ru08/fix-windows-1/\n?? evidence/uploaded-windows/\n?? package-lock.before-audit.json\n?? server/src/services/ai/validateStudyPack.js\n?? validation/ru08/compare-runs.mjs\n?? validation/ru08/validation-regression.mjs\n",
+  "fixtureSha256": "d59feac1a7b8ae1c792b6e0f4bec840601df35c1b62febedf94081c4fdc4913a",
+  "scriptSha256": "429afc5fc2c58a94c7259de3767a92050118a78c79889871ccaa64e782a1affb",
+  "lockSha256": "c8ea88737d94e946ff2df52214aa368ae9496b2598e05ab386305106cf8bf2c8",
+  "sourceHashes": {
+    "server/src/services/ai/aiService.js": "108c91bb9fcb8814a431c0451c465e7d061069e08006f517785bba8d000d2e7f",
+    "server/src/services/ai/validateStudyPack.js": "7f7f14cd76b6dead16a68df7931b90067ac664241b4a3dde6fdca9ba8eead744",
+    "server/src/services/ai/prompts.js": "55d7feb068e6d22362dd25c1ebc1912a8924c25db972371b864cc08e6cd8befb",
+    "server/src/services/ai/providers/geminiProvider.js": "a2965dd38081a827f501213c1e7a42a6482785b7af50b6ffd33b39dee34a6329",
+    "server/src/services/ai/providers/mockProvider.js": "07c92cc143cd8cbda15dadedd9727310a69931544b63bd2f6d4d26cf9d14cec1"
+  }
+}
