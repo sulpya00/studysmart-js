@@ -1,0 +1,512 @@
+[
+  {
+    "input": {
+      "content": "Atomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.",
+      "flashcardCount": 6,
+      "questionCount": 5
+    },
+    "output": {
+      "summary": "Atomicity means that a transaction completes entirely or has no effect. Consistency preserves database rules before and after a transaction. Isolation prevents concurrent transactions from interfering with one another. Durability means committed changes survive a restart.",
+      "keyPoints": [
+        "Atomicity means that a transaction completes entirely or has no effect.",
+        "Consistency preserves database rules before and after a transaction.",
+        "Isolation prevents concurrent transactions from interfering with one another.",
+        "Durability means committed changes survive a restart."
+      ],
+      "flashcards": [
+        {
+          "front": "What is Atomicity?",
+          "back": "that a transaction completes entirely or has no effect"
+        },
+        {
+          "front": "What does Consistency preserve?",
+          "back": "Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "front": "What does Isolation prevent?",
+          "back": "Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "front": "What is Durability?",
+          "back": "committed changes survive a restart"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What is Atomicity?",
+          "options": [
+            "that a transaction completes entirely or has no effect",
+            "Consistency preserves database rules before and after a transaction.",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "committed changes survive a restart"
+          ],
+          "correctAnswer": "that a transaction completes entirely or has no effect",
+          "explanation": "Source note: Atomicity means that a transaction completes entirely or has no effect."
+        },
+        {
+          "prompt": "What does Consistency preserve?",
+          "options": [
+            "that a transaction completes entirely or has no effect",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "committed changes survive a restart",
+            "Consistency preserves database rules before and after a transaction."
+          ],
+          "correctAnswer": "Consistency preserves database rules before and after a transaction.",
+          "explanation": "Source note: Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "prompt": "What does Isolation prevent?",
+          "options": [
+            "Consistency preserves database rules before and after a transaction.",
+            "committed changes survive a restart",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "that a transaction completes entirely or has no effect"
+          ],
+          "correctAnswer": "Isolation prevents concurrent transactions from interfering with one another.",
+          "explanation": "Source note: Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "prompt": "What is Durability?",
+          "options": [
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "committed changes survive a restart",
+            "that a transaction completes entirely or has no effect",
+            "Consistency preserves database rules before and after a transaction."
+          ],
+          "correctAnswer": "committed changes survive a restart",
+          "explanation": "Source note: Durability means committed changes survive a restart."
+        }
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "input": {
+      "content": "Atomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.\n\nA primary key identifies each database record.\n\nA foreign key refers to a record in another table.",
+      "flashcardCount": 6,
+      "questionCount": 5
+    },
+    "output": {
+      "summary": "Atomicity means that a transaction completes entirely or has no effect. Consistency preserves database rules before and after a transaction. Isolation prevents concurrent transactions from interfering with one another. Durability means committed changes survive a restart. A primary key identifies each database record. A foreign key refers to a record in another table.",
+      "keyPoints": [
+        "Atomicity means that a transaction completes entirely or has no effect.",
+        "Consistency preserves database rules before and after a transaction.",
+        "Isolation prevents concurrent transactions from interfering with one another.",
+        "Durability means committed changes survive a restart.",
+        "A primary key identifies each database record.",
+        "A foreign key refers to a record in another table."
+      ],
+      "flashcards": [
+        {
+          "front": "What is Atomicity?",
+          "back": "that a transaction completes entirely or has no effect"
+        },
+        {
+          "front": "What does Consistency preserve?",
+          "back": "Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "front": "What does Isolation prevent?",
+          "back": "Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "front": "What is Durability?",
+          "back": "committed changes survive a restart"
+        },
+        {
+          "front": "Complete this statement from the notes: A primary key ...",
+          "back": "A primary key identifies each database record."
+        },
+        {
+          "front": "What is A foreign key?",
+          "back": "a record in another table"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What is Atomicity?",
+          "options": [
+            "that a transaction completes entirely or has no effect",
+            "Consistency preserves database rules before and after a transaction.",
+            "committed changes survive a restart",
+            "a record in another table"
+          ],
+          "correctAnswer": "that a transaction completes entirely or has no effect",
+          "explanation": "Source note: Atomicity means that a transaction completes entirely or has no effect."
+        },
+        {
+          "prompt": "What does Consistency preserve?",
+          "options": [
+            "that a transaction completes entirely or has no effect",
+            "committed changes survive a restart",
+            "a record in another table",
+            "Consistency preserves database rules before and after a transaction."
+          ],
+          "correctAnswer": "Consistency preserves database rules before and after a transaction.",
+          "explanation": "Source note: Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "prompt": "What is Durability?",
+          "options": [
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "a record in another table",
+            "committed changes survive a restart",
+            "that a transaction completes entirely or has no effect"
+          ],
+          "correctAnswer": "committed changes survive a restart",
+          "explanation": "Source note: Durability means committed changes survive a restart."
+        },
+        {
+          "prompt": "Complete this statement from the notes: A primary key ...",
+          "options": [
+            "a record in another table",
+            "A primary key identifies each database record.",
+            "that a transaction completes entirely or has no effect",
+            "Isolation prevents concurrent transactions from interfering with one another."
+          ],
+          "correctAnswer": "A primary key identifies each database record.",
+          "explanation": "Source note: A primary key identifies each database record."
+        },
+        {
+          "prompt": "What is A foreign key?",
+          "options": [
+            "a record in another table",
+            "that a transaction completes entirely or has no effect",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "A primary key identifies each database record."
+          ],
+          "correctAnswer": "a record in another table",
+          "explanation": "Source note: A foreign key refers to a record in another table."
+        }
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "input": {
+      "content": "Atomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.\n\nAtomicity means that a transaction completes entirely or has no effect.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from interfering with one another.\n\nDurability means committed changes survive a restart.",
+      "flashcardCount": 6,
+      "questionCount": 5
+    },
+    "output": {
+      "summary": "Atomicity means that a transaction completes entirely or has no effect. Consistency preserves database rules before and after a transaction. Isolation prevents concurrent transactions from interfering with one another. Durability means committed changes survive a restart.",
+      "keyPoints": [
+        "Atomicity means that a transaction completes entirely or has no effect.",
+        "Consistency preserves database rules before and after a transaction.",
+        "Isolation prevents concurrent transactions from interfering with one another.",
+        "Durability means committed changes survive a restart.",
+        "Atomicity means that a transaction completes entirely or has no effect.",
+        "Consistency preserves database rules before and after a transaction.",
+        "Isolation prevents concurrent transactions from interfering with one another.",
+        "Durability means committed changes survive a restart."
+      ],
+      "flashcards": [
+        {
+          "front": "What is Atomicity?",
+          "back": "that a transaction completes entirely or has no effect"
+        },
+        {
+          "front": "What does Consistency preserve?",
+          "back": "Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "front": "What does Isolation prevent?",
+          "back": "Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "front": "What is Durability?",
+          "back": "committed changes survive a restart"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What is Atomicity?",
+          "options": [
+            "that a transaction completes entirely or has no effect",
+            "Consistency preserves database rules before and after a transaction.",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "committed changes survive a restart"
+          ],
+          "correctAnswer": "that a transaction completes entirely or has no effect",
+          "explanation": "Source note: Atomicity means that a transaction completes entirely or has no effect."
+        },
+        {
+          "prompt": "What does Consistency preserve?",
+          "options": [
+            "that a transaction completes entirely or has no effect",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "committed changes survive a restart",
+            "Consistency preserves database rules before and after a transaction."
+          ],
+          "correctAnswer": "Consistency preserves database rules before and after a transaction.",
+          "explanation": "Source note: Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "prompt": "What does Isolation prevent?",
+          "options": [
+            "Consistency preserves database rules before and after a transaction.",
+            "committed changes survive a restart",
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "that a transaction completes entirely or has no effect"
+          ],
+          "correctAnswer": "Isolation prevents concurrent transactions from interfering with one another.",
+          "explanation": "Source note: Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "prompt": "What is Durability?",
+          "options": [
+            "Isolation prevents concurrent transactions from interfering with one another.",
+            "committed changes survive a restart",
+            "that a transaction completes entirely or has no effect",
+            "Consistency preserves database rules before and after a transaction."
+          ],
+          "correctAnswer": "committed changes survive a restart",
+          "explanation": "Source note: Durability means committed changes survive a restart."
+        }
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "input": {
+      "content": "Photosynthesis uses light energy to produce sugars in plants.",
+      "flashcardCount": 6,
+      "questionCount": 5
+    },
+    "output": {
+      "summary": "Photosynthesis uses light energy to produce sugars in plants.",
+      "keyPoints": [
+        "Photosynthesis uses light energy to produce sugars in plants."
+      ],
+      "flashcards": [
+        {
+          "front": "What does Photosynthesis use?",
+          "back": "Photosynthesis uses light energy to produce sugars in plants."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What does Photosynthesis use?",
+          "options": [
+            "Photosynthesis uses light energy to produce sugars in plants.",
+            "The supplied notes do not support this statement.",
+            "It is unrelated to the main topic.",
+            "The notes state the opposite of this explanation."
+          ],
+          "correctAnswer": "Photosynthesis uses light energy to produce sugars in plants.",
+          "explanation": "Source note: Photosynthesis uses light energy to produce sugars in plants."
+        }
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "input": {
+      "content": "The experiment may depend on an unspecified temperature.\n\nThe author left the explanation unfinished because",
+      "flashcardCount": 6,
+      "questionCount": 5
+    },
+    "output": {
+      "summary": "The experiment may depend on an unspecified temperature. The author left the explanation unfinished because.",
+      "keyPoints": [
+        "The experiment may depend on an unspecified temperature.",
+        "The author left the explanation unfinished because."
+      ],
+      "flashcards": [
+        {
+          "front": "Complete this statement from the notes: The experiment may ...",
+          "back": "The experiment may depend on an unspecified temperature."
+        },
+        {
+          "front": "Complete this statement from the notes: The author left ...",
+          "back": "The author left the explanation unfinished because."
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "Complete this statement from the notes: The experiment may ...",
+          "options": [
+            "The experiment may depend on an unspecified temperature.",
+            "The author left the explanation unfinished because.",
+            "It is unrelated to the main topic.",
+            "The notes state the opposite of this explanation."
+          ],
+          "correctAnswer": "The experiment may depend on an unspecified temperature.",
+          "explanation": "Source note: The experiment may depend on an unspecified temperature."
+        },
+        {
+          "prompt": "Complete this statement from the notes: The author left ...",
+          "options": [
+            "The experiment may depend on an unspecified temperature.",
+            "It is unrelated to the main topic.",
+            "The notes state the opposite of this explanation.",
+            "The author left the explanation unfinished because."
+          ],
+          "correctAnswer": "The author left the explanation unfinished because.",
+          "explanation": "Source note: The author left the explanation unfinished because."
+        }
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "input": {
+      "content": "Concept 1 means the source definition numbered 1.\n\nConcept 2 means the source definition numbered 2.\n\nConcept 3 means the source definition numbered 3.\n\nConcept 4 means the source definition numbered 4.\n\nConcept 5 means the source definition numbered 5.\n\nConcept 6 means the source definition numbered 6.\n\nConcept 7 means the source definition numbered 7.\n\nConcept 8 means the source definition numbered 8.\n\nConcept 9 means the source definition numbered 9.\n\nConcept 10 means the source definition numbered 10.\n\nConcept 11 means the source definition numbered 11.\n\nConcept 12 means the source definition numbered 12.",
+      "flashcardCount": 6,
+      "questionCount": 5
+    },
+    "output": {
+      "summary": "Concept 1 means the source definition numbered 1. Concept 2 means the source definition numbered 2. Concept 3 means the source definition numbered 3. Concept 4 means the source definition numbered 4. Concept 5 means the source definition numbered 5. Concept 6 means the source definition numbered 6. Concept 7 means the source definition numbered 7. Concept 8 means the source definition numbered 8.",
+      "keyPoints": [
+        "Concept 1 means the source definition numbered 1.",
+        "Concept 2 means the source definition numbered 2.",
+        "Concept 3 means the source definition numbered 3.",
+        "Concept 4 means the source definition numbered 4.",
+        "Concept 5 means the source definition numbered 5.",
+        "Concept 6 means the source definition numbered 6.",
+        "Concept 7 means the source definition numbered 7.",
+        "Concept 8 means the source definition numbered 8."
+      ],
+      "flashcards": [
+        {
+          "front": "What is Concept 1?",
+          "back": "the source definition numbered 1"
+        },
+        {
+          "front": "What is Concept 3?",
+          "back": "the source definition numbered 3"
+        },
+        {
+          "front": "What is Concept 5?",
+          "back": "the source definition numbered 5"
+        },
+        {
+          "front": "What is Concept 8?",
+          "back": "the source definition numbered 8"
+        },
+        {
+          "front": "What is Concept 10?",
+          "back": "the source definition numbered 10"
+        },
+        {
+          "front": "What is Concept 12?",
+          "back": "the source definition numbered 12"
+        }
+      ],
+      "questions": [
+        {
+          "prompt": "What is Concept 1?",
+          "options": [
+            "the source definition numbered 1",
+            "the source definition numbered 2",
+            "the source definition numbered 7",
+            "the source definition numbered 12"
+          ],
+          "correctAnswer": "the source definition numbered 1",
+          "explanation": "Source note: Concept 1 means the source definition numbered 1."
+        },
+        {
+          "prompt": "What is Concept 4?",
+          "options": [
+            "the source definition numbered 1",
+            "the source definition numbered 7",
+            "the source definition numbered 12",
+            "the source definition numbered 4"
+          ],
+          "correctAnswer": "the source definition numbered 4",
+          "explanation": "Source note: Concept 4 means the source definition numbered 4."
+        },
+        {
+          "prompt": "What is Concept 7?",
+          "options": [
+            "the source definition numbered 6",
+            "the source definition numbered 12",
+            "the source definition numbered 7",
+            "the source definition numbered 1"
+          ],
+          "correctAnswer": "the source definition numbered 7",
+          "explanation": "Source note: Concept 7 means the source definition numbered 7."
+        },
+        {
+          "prompt": "What is Concept 9?",
+          "options": [
+            "the source definition numbered 12",
+            "the source definition numbered 9",
+            "the source definition numbered 1",
+            "the source definition numbered 6"
+          ],
+          "correctAnswer": "the source definition numbered 9",
+          "explanation": "Source note: Concept 9 means the source definition numbered 9."
+        },
+        {
+          "prompt": "What is Concept 12?",
+          "options": [
+            "the source definition numbered 12",
+            "the source definition numbered 1",
+            "the source definition numbered 6",
+            "the source definition numbered 11"
+          ],
+          "correctAnswer": "the source definition numbered 12",
+          "explanation": "Source note: Concept 12 means the source definition numbered 12."
+        }
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "id": "M08",
+    "response": {
+      "flashcards": [
+        {
+          "front": "What is Atomicity?",
+          "back": "that a transaction completes entirely or has no effect"
+        },
+        {
+          "front": "What does Consistency preserve?",
+          "back": "Consistency preserves database rules before and after a transaction."
+        },
+        {
+          "front": "What does Isolation prevent?",
+          "back": "Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "front": "What is Durability?",
+          "back": "committed changes survive a restart"
+        }
+      ],
+      "warnings": [
+        "Returned 4 flashcards out of 6 requested. The provider did not supply enough usable items; review the notes or request fewer items."
+      ],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  },
+  {
+    "id": "M09",
+    "response": {
+      "flashcards": [
+        {
+          "front": "What is Atomicity?",
+          "back": "that a transaction completes entirely or has no effect"
+        },
+        {
+          "front": "What does Isolation prevent?",
+          "back": "Isolation prevents concurrent transactions from interfering with one another."
+        },
+        {
+          "front": "What is Durability?",
+          "back": "committed changes survive a restart"
+        }
+      ],
+      "warnings": [],
+      "provider": "mock",
+      "model": "paragraph-aware-demo"
+    }
+  }
+]

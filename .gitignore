@@ -6,3 +6,7 @@ client/dist/
 server/node_modules/.prisma/
 *.log
 .DS_Store
+
+!server/.env.review.example
+validation/ru10/database/review-data/
+review-output/

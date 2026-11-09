@@ -1,0 +1,11 @@
+{
+  "name": "studysmart-ru10-disposable-database",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pglite-server -d ./review-data -p 55432 -h 127.0.0.1 -m 8"
+  },
+  "dependencies": {
+    "@electric-sql/pglite-socket": "0.2.18"
+  }
+}

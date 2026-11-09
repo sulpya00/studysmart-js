@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+const base = process.env.VALIDATION_URL || 'http://localhost:5173';
+const fixtures = JSON.parse(await readFile(new URL('../ru08/fixtures.json', import.meta.url)));
+const {title, subject, content} = fixtures.find(row => row.id === 'F01');
+const userEmail = 'ru10-reviewer@example.test';
+const input = {title, subject, content, userEmail, aiProvider:'mock', flashcardCount:6, questionCount:5};
+async function request(path, body, expected = 200) {
+  const response = await fetch(base + path, body ? {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)} : {});
+  const result = await response.json();
+  assert.equal(response.status, expected, path + ' ' + JSON.stringify(result));
+  return result;
+}
+const health = await request('/api/health');
+assert.equal(health.status,'ok');
+const saved = await request('/api/ai/study-pack', input);
+assert.equal(saved.saved,true);
+assert.ok(saved.topicId);
+assert.equal(saved.provider,'mock');
+assert.equal(saved.flashcards.length,6);
+assert.equal(saved.questions.length,5);
+const query = '?userEmail=' + encodeURIComponent(userEmail);
+const {topics} = await request('/api/history/topics' + query);
+assert.ok(topics.some(row => row.id === saved.topicId));
+const {topic} = await request('/api/history/topics/' + saved.topicId + query);
+assert.equal(topic.content,content);
+assert.equal(topic.summary,saved.summary);
+const sorted = values => [...values].sort();
+assert.deepEqual(sorted(topic.flashcards.map(c => c.front)),sorted(saved.flashcards.map(c => c.front)));
+assert.deepEqual(sorted(topic.questions.map(q => q.prompt)),sorted(saved.questions.map(q => q.prompt)));
+await request('/api/ai/study-pack',{...input,content:''},400);
+console.log(JSON.stringify({status:'PASS',fixture:'F01',topicId:topic.id,flashcards:6,questions:5,reopened:true,emptyNotesStatus:400}));

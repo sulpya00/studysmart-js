@@ -1,0 +1,34 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-js@0.2.0 dev
+> concurrently -n server,client -c auto "npm run dev --workspace server" "npm run dev --workspace client"
+
+[server] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[client] npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+[server] 
+[server] > studysmart-server@0.2.0 dev
+[server] > nodemon src/server.js
+[server] 
+[client] 
+[client] > studysmart-client@0.2.0 dev
+[client] > vite
+[client] 
+[server] [33m[nodemon] 3.1.14[39m
+[server] [33m[nodemon] to restart at any time, enter `rs`[39m
+[server] [33m[nodemon] watching path(s): *.*[39m
+[server] [33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[server] [32m[nodemon] starting `node src/server.js`[39m
+[client] 
+[client]   VITE v8.1.5  ready in 148 ms
+[client] 
+[client]   ➜  Local:   http://localhost:5173/
+[client]   ➜  Network: use --host to expose
+[client] 6:49:52 PM [vite] http proxy error: /api/health
+[client] AggregateError [ECONNREFUSED]: 
+[client]     at internalConnectMultiple (node:net:1492:18)
+[client]     at afterConnectMultiple (node:net:2161:7)
+[server] StudySmart API running at http://localhost:4000
+[server] AI provider: mock
+[server] 
+[server] SIGTERM received. Closing server...
+[client] npm run dev --workspace client exited with code SIGTERM

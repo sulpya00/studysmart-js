@@ -1,0 +1,170 @@
+Fresh temporary source tree. No installed modules, compiled client, populated database or private configuration copied. Ubuntu 24.04 x86_64. npm download cache may be reused.
+$ node -v
+v24.22.1
+
+exit 0
+$ npm -v
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+11.9.0
+
+exit 0
+$ npm ci
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 220 packages in 7s
+
+exit 0
+$ npm --prefix validation/ru10/database ci
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+added 9 packages in 556ms
+
+exit 0
+Copied server/.env.review.example to server/.env
+$ npm run db:generate
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-js@0.2.0 db:generate
+> npm run db:generate --workspace server
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-server@0.2.0 db:generate
+> prisma generate
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.19.0) to ./../node_modules/@prisma/client in 83ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+
+exit 0
+$ npm run db:push
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-js@0.2.0 db:push
+> npm run db:push --workspace server
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-server@0.2.0 db:push
+> prisma db push
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "postgres", schema "public" at "127.0.0.1:55432"
+
+🚀  Your database is now in sync with your Prisma schema. Done in 144ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.0) to ./../node_modules/@prisma/client in 104m
+s
+
+
+exit 0
+$ npm run build
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-js@0.2.0 build
+> npm run build --workspace client
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> studysmart-client@0.2.0 build
+> vite build
+
+vite v8.1.5 building client environment for production...
+[2K
+transforming...✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.28 kB
+dist/assets/index-cynBroU0.css   15.10 kB │ gzip:  4.10 kB
+dist/assets/index-DvYw9VF9.js   210.25 kB │ gzip: 65.31 kB
+
+✓ built in 323ms
+
+exit 0
+$ node validation/midpoint-checks.mjs review-output/midpoint
+{
+  "recordedAt": "2026-11-03T18:49:51.042Z",
+  "runtime": "v24.22.1",
+  "platform": "linux",
+  "scope": "Mock direct-function and isolated HTTP regression only. No database, browser interaction or live-provider validation. Original count targets and SC2 remain separate.",
+  "results": [
+    {
+      "id": "M01",
+      "name": "Same ACID fixture returns four unique items, not padded requested counts",
+      "status": "PASS"
+    },
+    {
+      "id": "M02",
+      "name": "Adequate notes still fulfill six cards and five questions",
+      "status": "PASS"
+    },
+    {
+      "id": "M03",
+      "name": "Repeated source sentences do not produce repeated items",
+      "status": "PASS"
+    },
+    {
+      "id": "M04",
+      "name": "Single fact returns one item and neutral distractors",
+      "status": "PASS"
+    },
+    {
+      "id": "M05",
+      "name": "Ambiguous and incomplete notes retain source wording without invented completion",
+      "status": "PASS"
+    },
+    {
+      "id": "M06",
+      "name": "Long notes use later facts for items; eight-point summary limit remains explicit",
+      "status": "PASS"
+    },
+    {
+      "id": "M07",
+      "name": "Empty direct input returns no fabricated study items",
+      "status": "PASS"
+    },
+    {
+      "id": "M08",
+      "name": "HTTP flashcard count and shortfall notice",
+      "status": "PASS"
+    },
+    {
+      "id": "M09",
+      "name": "HTTP flashcard count and shortfall notice",
+      "status": "PASS"
+    }
+  ]
+}
+
+exit 0
+$ node validation/ru08/validation-regression.mjs review-output/replay
+Error: The AI provider returned an invalid study pack. Please try again.
+    at validateStudyPack (file:///tmp/tmpj5zwbvwz/StudySmart-RU10/server/src/services/ai/validateStudyPack.js:43:19)
+    at generateStudyPack (file:///tmp/tmpj5zwbvwz/StudySmart-RU10/server/src/services/ai/aiService.js:24:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async createStudyPack (file:///tmp/tmpj5zwbvwz/StudySmart-RU10/server/src/controllers/aiController.js:80:23) {
+  statusCode: 502,
+  code: 'INVALID_STUDY_PACK'
+}
+{
+  "pass": 30,
+  "fail": 0
+}
+
+exit 0
+GET / returned HTTP 200 with React root. GET /api/health through Vite returned ok.
+$ node validation/ru10/save-reopen.mjs
+{"status":"PASS","fixture":"F01","topicId":"cmw11lh5j0002odc8ft4iwxbv","flashcards":6,"questions":5,"reopened":true,"emptyNotesStatus":400}
+
+exit 0
+Clean-run pass complete.
