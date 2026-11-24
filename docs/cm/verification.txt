@@ -1,0 +1,2 @@
+PASS: packaged fixture generated four unique cards and four unique questions with valid answer choices.
+PASS: removing evidence/core-run-1/input.json from the disposable export produced exit 1 and ENOENT.
