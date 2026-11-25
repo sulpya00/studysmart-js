@@ -1,0 +1,17 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-ru10-disposable-database@1.0.0 start
+> pglite-server -d ./review-data -p 55432 -h 127.0.0.1 -m 8
+
+Initializing PGLite with database: ./review-data
+Debug level: 0
+PGlite database initialized
+PGLiteSocketServer listening on {"port":55432,"host":"127.0.0.1"}
+Client connected from 127.0.0.1:33666
+Client connected from 127.0.0.1:52760
+Client connected from 127.0.0.1:52762
+Client connected from 127.0.0.1:52770
+Client connected from 127.0.0.1:52780
+
+Shutting down PGLiteSocketServer...
+Server stopped

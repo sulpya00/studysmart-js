@@ -1,0 +1,95 @@
+{
+  "id": "cmwpi215c0002od3qtx625rbc",
+  "title": "Short complete notes",
+  "content": "Atomicity makes a transaction an all-or-nothing operation.\n\nConsistency preserves database rules before and after a transaction.\n\nIsolation prevents concurrent transactions from observing intermediate changes.\n\nDurability preserves committed changes after a restart.\n\nA primary key uniquely identifies a row in a table.\n\nA foreign key references a key in another table.",
+  "summary": "Atomicity makes a transaction an all-or-nothing operation. Consistency preserves database rules before and after a transaction. Isolation prevents concurrent transactions from observing intermediate changes. Durability preserves committed changes after a restart. A primary key uniquely identifies a row in a table. A foreign key references a key in another table.",
+  "flashcards": [
+    {
+      "front": "Complete this statement from the notes: Atomicity makes a ...",
+      "back": "Atomicity makes a transaction an all-or-nothing operation.",
+      "reviewStatus": "NEW"
+    },
+    {
+      "front": "What does Consistency preserve?",
+      "back": "Consistency preserves database rules before and after a transaction.",
+      "reviewStatus": "NEW"
+    },
+    {
+      "front": "What does Isolation prevent?",
+      "back": "Isolation prevents concurrent transactions from observing intermediate changes.",
+      "reviewStatus": "NEW"
+    },
+    {
+      "front": "What does Durability preserve?",
+      "back": "Durability preserves committed changes after a restart.",
+      "reviewStatus": "NEW"
+    },
+    {
+      "front": "Complete this statement from the notes: A primary key ...",
+      "back": "A primary key uniquely identifies a row in a table.",
+      "reviewStatus": "NEW"
+    },
+    {
+      "front": "Complete this statement from the notes: A foreign key ...",
+      "back": "A foreign key references a key in another table.",
+      "reviewStatus": "NEW"
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Complete this statement from the notes: Atomicity makes a ...",
+      "options": [
+        "Atomicity makes a transaction an all-or-nothing operation.",
+        "Consistency preserves database rules before and after a transaction.",
+        "Durability preserves committed changes after a restart.",
+        "A foreign key references a key in another table."
+      ],
+      "correctAnswer": "Atomicity makes a transaction an all-or-nothing operation.",
+      "explanation": "Source note: Atomicity makes a transaction an all-or-nothing operation."
+    },
+    {
+      "prompt": "What does Consistency preserve?",
+      "options": [
+        "Atomicity makes a transaction an all-or-nothing operation.",
+        "Durability preserves committed changes after a restart.",
+        "A foreign key references a key in another table.",
+        "Consistency preserves database rules before and after a transaction."
+      ],
+      "correctAnswer": "Consistency preserves database rules before and after a transaction.",
+      "explanation": "Source note: Consistency preserves database rules before and after a transaction."
+    },
+    {
+      "prompt": "What does Durability preserve?",
+      "options": [
+        "Isolation prevents concurrent transactions from observing intermediate changes.",
+        "A foreign key references a key in another table.",
+        "Durability preserves committed changes after a restart.",
+        "Atomicity makes a transaction an all-or-nothing operation."
+      ],
+      "correctAnswer": "Durability preserves committed changes after a restart.",
+      "explanation": "Source note: Durability preserves committed changes after a restart."
+    },
+    {
+      "prompt": "Complete this statement from the notes: A primary key ...",
+      "options": [
+        "A foreign key references a key in another table.",
+        "A primary key uniquely identifies a row in a table.",
+        "Atomicity makes a transaction an all-or-nothing operation.",
+        "Isolation prevents concurrent transactions from observing intermediate changes."
+      ],
+      "correctAnswer": "A primary key uniquely identifies a row in a table.",
+      "explanation": "Source note: A primary key uniquely identifies a row in a table."
+    },
+    {
+      "prompt": "Complete this statement from the notes: A foreign key ...",
+      "options": [
+        "A foreign key references a key in another table.",
+        "Atomicity makes a transaction an all-or-nothing operation.",
+        "Isolation prevents concurrent transactions from observing intermediate changes.",
+        "A primary key uniquely identifies a row in a table."
+      ],
+      "correctAnswer": "A foreign key references a key in another table.",
+      "explanation": "Source note: A foreign key references a key in another table."
+    }
+  ]
+}

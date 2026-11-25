@@ -1,0 +1,114 @@
+[
+  {
+    "session": 1,
+    "mode": "sequential",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwphzxj20002odcd2075bwtq",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 1,
+    "mode": "sequential",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwphzxre000lodcdtrehm97o",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 1,
+    "mode": "overlapping",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwphzxyx001nodcdpl8gfgcs",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 1,
+    "mode": "overlapping",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwphzxyl0015odcd2hnuh8mq",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 2,
+    "mode": "sequential",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwphzzhy0002odhg8b63rdpq",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 2,
+    "mode": "sequential",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwphzzpt000lodhgbrku48n3",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 2,
+    "mode": "overlapping",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwpi002b0015odhghy8uip2q",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  },
+  {
+    "session": 2,
+    "mode": "overlapping",
+    "exit": 0,
+    "result": {
+      "status": "PASS",
+      "fixture": "F01",
+      "topicId": "cmwpi002s001nodhguiszn2vn",
+      "flashcards": 6,
+      "questions": 5,
+      "reopened": true,
+      "emptyNotesStatus": 400
+    }
+  }
+]

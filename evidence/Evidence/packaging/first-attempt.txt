@@ -1,0 +1,127 @@
+Linux-6.18.57-x86_64-with-glibc2.41
+$ node --version
+v24.22.3
+
+exit=0
+$ npm --version
+11.19.1
+
+exit=0
+$ npm ci
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+
+added 220 packages in 10s
+npm warn install-scripts 5 packages have install scripts not yet covered by allowScripts:
+npm warn install-scripts   @google/genai@2.12.0 (preinstall: echo 'preinstall: no-op')
+npm warn install-scripts   @prisma/client@6.19.0 (postinstall: node scripts/postinstall.js)
+npm warn install-scripts   @prisma/engines@6.19.0 (postinstall: node scripts/postinstall.js)
+npm warn install-scripts   prisma@6.19.0 (preinstall: node scripts/preinstall-entry.js)
+npm warn install-scripts   protobufjs@7.6.5 (postinstall: node scripts/postinstall)
+npm warn install-scripts
+npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+
+exit=0
+$ npm --prefix validation/ru10/database ci
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+added 9 packages in 1s
+
+exit=0
+$ npm --prefix validation/ru10/database start [service pid 139, database.txt]
+Listening banner and TCP connection confirmed before schema sync.
+$ cp server/.env.review.example server/.env
+
+exit=0
+$ npm run db:generate
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-js@0.2.0 db:generate
+> npm run db:generate --workspace server
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-server@0.2.0 db:generate
+> prisma generate
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v6.19.0) to ./../node_modules/@prisma/client in 153ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want to turn off tips and other hints? https://pris.ly/tip-4-nohints
+
+
+exit=0
+$ npm run db:push
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-js@0.2.0 db:push
+> npm run db:push --workspace server
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-server@0.2.0 db:push
+> prisma db push
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "postgres", schema "public" at "127.0.0.1:55432"
+
+🚀  Your database is now in sync with your Prisma schema. Done in 256ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.0) to ./../node_modules/@prisma/client in 158m
+s
+
+
+exit=0
+$ npm run build
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-js@0.2.0 build
+> npm run build --workspace client
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> studysmart-client@0.2.0 build
+> vite build
+
+vite v8.1.5 building client environment for production...
+[2K
+transforming...✓ 20 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.28 kB
+dist/assets/index-cynBroU0.css   15.10 kB │ gzip:  4.10 kB
+dist/assets/index-DvYw9VF9.js   210.25 kB │ gzip: 65.31 kB
+
+✓ built in 258ms
+
+exit=0
+$ npm run dev [service pid 351, application-1.txt]
+$ node validation/midpoint-checks.mjs /tmp/ru-extracted/StudySmart/review-output/final/mock
+node:fs:483
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/tmp/ru-extracted/StudySmart/evidence/core-run-1/input.json'
+    at readFileSync (node:fs:483:20)
+    at file:///tmp/ru-extracted/StudySmart/validation/midpoint-checks.mjs:7:25
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/tmp/ru-extracted/StudySmart/evidence/core-run-1/input.json'
+}
+
+Node.js v24.22.3
+
+exit=1
+service 351 stopped by runner; exit=-15
+service 139 stopped by runner; exit=-15
